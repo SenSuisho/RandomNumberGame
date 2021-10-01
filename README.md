@@ -1,5 +1,5 @@
 # RandomNumberGame
-RandomNumberGame is a project that utilizes interaction between the user and the console. As the game starts, the program will create a four-digit "code" that the user will attempt to guess. While checking the user's input the porgram will also check for numbers that are a part of the generated code, but not in the correct position. The program will keep track of these values both, "correct" and "misplaced", and will display them to the user. After the twelfth unsuccesful guess, the main game will end as a loss for the user and output the secret code. The game will then prompt the user to either continue playing or terminate the program entirely.
+RandomNumberGame is a project that utilizes interaction between the user and the console. As the game starts, the program will create a four-digit "code" that the user will attempt to guess. While checking the user's input the porgram will also check for numbers that are a part of the generated code, but not in the correct position. The program will keep track of these values, both "correct" and "misplaced", and will display them to the user. After the twelfth unsuccessful guess, the main game will end as a loss for the user and output the secret code. The game will then prompt the user to either continue playing or terminate the program entirely.
 ## Components
 The program uses functions and constants to control the flow of the game and manage the secret code requirements
 ```C++
@@ -42,3 +42,4 @@ while ( (!guessed_code) && (num_guesses < MAX_GUESSES) )
 ```
 The **while** loop shown above checks a flag variable to see if the code has been guessed while also checking if the amount of guesses has exceeded the allowed amount(denoted by a constant variable **MAX_GUESSES**). An additional **while** loop checks a basic flag variable(**game_over**) that controls whether the game continues, by simply flipping using a basic "Y/N" option at the end of each round.
 ## Trial Run Example
+![](Images/OutputExample.PNG)
